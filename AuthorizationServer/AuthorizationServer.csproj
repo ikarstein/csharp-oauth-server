@@ -1,29 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <ReleaseVersion>1.0</ReleaseVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-    <Folder Include="Spi\" />
-    <Folder Include="Db\" />
-    <Folder Include="Util\" />
-    <Folder Include="Views\" />
-    <Folder Include="Views\Authorization\" />
-    <Folder Include="Models\" />
-    <Folder Include="wwwroot\css\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.WebApiCompatShim" Version="2.0.1" />
-    <PackageReference Include="Authlete.Authlete" Version="1.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Authlete.Authlete" Version="1.5.0" />
+	</ItemGroup>
 
 </Project>
